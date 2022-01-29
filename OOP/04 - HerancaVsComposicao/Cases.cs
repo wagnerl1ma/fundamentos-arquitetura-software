@@ -6,12 +6,12 @@ namespace OOP
 
     public class PessoaFisica : Pessoa
     {
-        public string Cpf { get; set; }
+        public string Cpf { get; set; } // Herança
     }
 
     public class PessoaFisica2
     {
-        public Pessoa Pessoa { get; set; }
+        public Pessoa Pessoa { get; set; } // Composição
         public string Cpf { get; set; }
     }
 
@@ -45,14 +45,14 @@ namespace OOP
 
     #region Caso 2
 
-    public interface IRepositorio<T>
+    public interface IRepositorio<T> // Repositorio Generico
     {
         void Adicionar(T obj);
 
         void Excluir(T obj);
     }
 
-    public interface IRepositorioPessoa
+    public interface IRepositorioPessoa // Repositorio Especializado para "Pessoa"
     {
         void Adicionar(Pessoa obj);
     }

@@ -15,7 +15,7 @@ namespace ProjetoA
         protected internal void TesteProtegidoInterno() { }
     }
 
-    public sealed class Selada { }
+    public sealed class Selada { } // sealed: nao pode ser herdada para modificar o comportamento, somente instanciada.
 
     class Privada { }
 
@@ -34,7 +34,7 @@ namespace ProjetoA
             var publica = new Publica();
             var privada = new Privada();
             var interna = new Interna();
-            //var abstrata = new Abstrata();
+            //var abstrata = new Abstrata(); //classes abstratas nao podem ser instanciadas, somente herdadas.
         }
     }
 
