@@ -7,9 +7,7 @@ namespace SOLID.DIP.Solucao
         private readonly IClienteRepository _clienteRepository;
         private readonly IEmailServices _emailServices;
 
-        public ClienteServices(
-            IEmailServices emailServices, 
-            IClienteRepository clienteRepository)
+        public ClienteServices(IEmailServices emailServices, IClienteRepository clienteRepository)
         {
             _emailServices = emailServices;
             _clienteRepository = clienteRepository;

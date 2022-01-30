@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SOLID.SRP.Solucao
+namespace SOLID.SRP.Solucao   //SRP - Separa as Responsabilidades para cada método.
 {
     public class Cliente
     {
