@@ -21,9 +21,9 @@ namespace DemoDI
         {
             #region Lifecycle
 
-            services.AddTransient<IOperacaoTransient, Operacao>();
-            services.AddScoped<IOperacaoScoped, Operacao>();
-            services.AddSingleton<IOperacaoSingleton, Operacao>();
+            services.AddTransient<IOperacaoTransient, Operacao>();  // Abre uma instancia de um objeto a cada chamada.
+            services.AddScoped<IOperacaoScoped, Operacao>();        // Abre apenas uma instancia do objeto até o final da requisição, finalizou a requisição, na proxima irá criar uma nova instancia. - Mais utilizado para aplicações web.
+            services.AddSingleton<IOperacaoSingleton, Operacao>();  // Abre apenas uma instancia do objeto até finalizar a aplicação, usa a mesma instancia de um objeto para todos as requisições - Tomar cuidado ao usar.
             services.AddSingleton<IOperacaoSingletonInstance>(new Operacao(Guid.Empty));
             services.AddTransient<OperacaoService>();
 
