@@ -38,7 +38,7 @@ namespace DemoDI
 
             #region Generics
 
-            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));  // Todas vez que registrar um repositório genérico, é necessário usar o "typeof".
 
             #endregion
 
