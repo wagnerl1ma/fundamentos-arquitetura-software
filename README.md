@@ -14,7 +14,7 @@ Projeto criado com base no curso Fundamentos de Arquitetura de Software, ofereci
 
 ```bash
 # clonar repositório
-git clone https://github.com/wagnerl1ma/Fundamentos-Arquitetura-Software.git
+git clone https://github.com/wagnerl1ma/fundamentos-arquitetura-software.git
 
 # Autor
 
